@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Prueba ejercicio</title>
+    <link rel="stylesheet" href="index.css">
+    <script type="text/javascript" src="index.js"></script>
+</head>
+
+<body onkeypress=recogerLetra(event) onload=escogerPalabraAleatoria()>
+    
+    <div id="campoBoton">
+        <div id="reinicio" onclick=reiniciar()>Reiniciar</div>
+    </div>
+    <div id="encabezado">
+        <h1 id="titulo">Juego del ahorcado</h1>
+
+    </div>
+    <div id="cuerpo">
+        <div id="menuIzquierda"></div> 
+        <div id="horca">
+            <div id="error"></div>
+            <div id="parteCuerpo1" class="parte"></div>
+            <div id="parteCuerpo2" class="parte"></div>
+            <div id="parteCuerpo3" class="parte"></div>
+            <div id="parteCuerpo4" class="parte"></div>
+            <div id="parteCuerpo5" class="parte"></div>
+            <div id="parteCuerpo6" class="parte"></div>
+        </div>
+        <div id="CampoPalabra">
+            <textarea readonly = "readonly" name="palabra" id="palabra" cols="30" rows="10"></textarea>
+            <textarea readonly = "readonly" name="letras" id="letras" cols="30" rows="10"></textarea>
+        </div>
+        <div id="menuDerecha"></div>
+    </div>
+    <audio src="Camilo.mp3" type="audio/mpeg" autoplay loop></audio>
+
+
+</body>
+
+</html>
